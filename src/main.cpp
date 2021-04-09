@@ -1,10 +1,11 @@
-// Copyright 2021
-#include <iostream>
-#include <string>
+//Copyright 2021 Kris
 
 #include "train.h"
 
 int main() {
-  return 0;
+    Train tr;
+    tr.CreateCages(10);
+    unsigned int L = tr.CountLength();
+    tr.printall(L);
+    return 0;
 }
-
