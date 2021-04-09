@@ -1,4 +1,4 @@
-// Copyright 2021 GHA Test Team
+// Copyright 2021 Kris
 #include <gtest/gtest.h>
 #include <string>
 #include "train.h"
@@ -22,5 +22,3 @@ TEST(TrainTest, test3) {
     train->CreateCages(9);
     EXPECT_EQ(9, train->CountLength());
 }
-
-
