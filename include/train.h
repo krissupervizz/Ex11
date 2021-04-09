@@ -1,17 +1,18 @@
-//Copyright 2021 Kris
+//   Copyright 2021 Kris
 
 
+#ifndef INCLUDE_TRAIN_H_
+#define INCLUDE_TRAIN_H_
 #include <random>
 #include <iostream>
 
-class Cage
-{
+class Cage{
     bool light;
-public:
+ public:
     Cage* next;
     Cage* prev;
     Cage() : light(false), next(nullptr), prev(nullptr) {}
-    Cage(bool l) : light(l), next(nullptr), prev(nullptr) {}
+    explicit Cage(bool l) : light(l), next(nullptr), prev(nullptr) {}
     void setp(Cage* pr) {
         prev = pr;
     }
@@ -20,11 +21,10 @@ public:
     bool get() const { return light; }
 };
 
-class Train
-{
+class Train{
     Cage* first;
     Cage* last;
-public:
+ public:
     Train() : first(nullptr), last(nullptr) {}
     void AddCage(Cage* _cage);
     void CreateCages(unsigned int i);
@@ -40,3 +40,5 @@ public:
     }
     unsigned int CountLength();
 };
+
+#endif   //  INCLUDE_TRAIN_H_

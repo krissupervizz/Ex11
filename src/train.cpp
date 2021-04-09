@@ -1,4 +1,4 @@
-//Copyright 2021 Kris
+//   Copyright 2021 Kris
 
 
 #include "train.h"
@@ -9,8 +9,7 @@ void Train::AddCage(Cage* _cage) {
         _cage->prev = _cage;
         first = _cage;
         last = _cage;
-    }
-    else {
+    } else {
         last->prev = _cage;
         _cage->next = last;
         _cage->prev = first;

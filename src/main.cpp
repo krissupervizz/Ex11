@@ -1,4 +1,4 @@
-//Copyright 2021 Kris
+//   Copyright 2021 Kris
 
 #include "train.h"
 
